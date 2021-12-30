@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+
+int main()
+{
+   int x[3][3];
+   int i,j,avg,sum=0;
+   printf("Enter the 3x3 matrix :");
+   for (i=0;i<3;i++)
+   {
+       for(j=0;j<3;j++)
+       {
+           scanf("%d",&x[i][j]);
+       }
+   }
+   for (i=0;i<3;i++)
+   {
+       for(j=0;j<3;j++)
+       {
+           //printf("%d",x[i][j]);
+           sum += x[i][j]; 
+       }
+   }
+   avg = sum/9;
+   printf(" the average of matrix is : %d",avg);
+   
+}
